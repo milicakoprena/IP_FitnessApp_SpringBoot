@@ -1,0 +1,116 @@
+{
+  "rules": [
+	{
+      "methods": ["POST"],
+      "pattern": "/comments",
+      "roles": [
+        "ACTIVE", "REQUESTED", "INACTIVE"
+      ]
+    },
+	{
+      "methods": ["POST"],
+      "pattern": "/fitnesstrackers",
+      "roles": [
+        "ACTIVE", "REQUESTED", "INACTIVE"
+      ]
+    },
+	{
+      "methods": ["POST"],
+      "pattern": "/programs",
+      "roles": [
+        "ACTIVE", "REQUESTED", "INACTIVE"
+      ]
+    },
+    {
+      "methods": ["POST"],
+      "pattern": "/messages",
+      "roles": [
+        "ACTIVE", "REQUESTED", "INACTIVE"
+      ]
+    },
+	{
+      "methods": ["DELETE"],
+      "pattern": "/programs/*",
+      "roles": [
+        "ACTIVE", "REQUESTED", "INACTIVE"
+      ]
+    },
+    {
+      "methods": ["GET"],
+      "pattern": "/users",
+      "roles": [
+        "ACTIVE", "REQUESTED", "INACTIVE"
+      ]
+    },
+	{
+      "methods": ["PUT"],
+      "pattern": "/users/*",
+      "roles": [
+        "ACTIVE", "REQUESTED", "INACTIVE"
+      ]
+    },
+    {
+      "methods": ["PUT"],
+      "pattern": "/users/**",
+      "roles": [
+        "ACTIVE", "REQUESTED", "INACTIVE"
+      ]
+    },
+    {
+      "methods": ["GET"],
+      "pattern": "/users/*",
+      "roles": [
+        "ACTIVE", "REQUESTED", "INACTIVE"
+      ]
+    },
+	{
+      "methods": ["GET"],
+      "pattern": "/users/**",
+      "roles": [
+        "ACTIVE", "REQUESTED", "INACTIVE"
+      ]
+    },
+	{
+      "methods": ["GET"],
+      "pattern": "/users/***",
+      "roles": [
+        "ACTIVE", "REQUESTED", "INACTIVE"
+      ]
+    },
+	{
+      "methods": ["POST"],
+      "pattern": "user_has_categories",
+      "roles": [
+        "ACTIVE", "REQUESTED", "INACTIVE"
+      ]
+    },
+    {
+      "methods": ["GET"],
+      "pattern": "/user_has_categories/**",
+      "roles": [
+        "ACTIVE", "REQUESTED", "INACTIVE"
+      ]
+    },
+    {
+      "methods": ["DELETE"],
+      "pattern": "/user_has_categories/**",
+      "roles": [
+        "ACTIVE", "REQUESTED", "INACTIVE"
+      ]
+    },
+	{
+      "methods": ["POST"],
+      "pattern": "user_has_programs",
+      "roles": [
+        "ACTIVE", "REQUESTED", "INACTIVE"
+      ]
+    },
+    {
+      "methods": ["POST"],
+      "pattern": "program_has_attributes",
+      "roles": [
+        "ACTIVE", "REQUESTED", "INACTIVE"
+      ]
+    }
+  ]
+}

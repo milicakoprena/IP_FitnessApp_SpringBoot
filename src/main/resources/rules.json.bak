@@ -1,0 +1,19 @@
+{
+  "rules": [
+    {
+      "methods": ["POST"],
+      "pattern": "/programs",
+      "roles": [
+        "ACTIVE", "REQUESTED", "INACTIVE"
+      ]
+    },
+    {
+      "methods": ["DELETE"],
+      "pattern": "/programs/*",
+      "roles": [
+        "ACTIVE", "REQUESTED", "INACTIVE"
+      ]
+    }
+
+  ]
+}
